@@ -1,10 +1,10 @@
 # Sentiment-Analysis
 
-## Abstract
+### Abstract
 Given an opinion target in a sentence, we were required to predict the sentiment label for the aspect term in the sentence.
 
 
-Introduction
+### Introduction
 Sentiment Analysis is the process of identification of opinions expressed in the form of text, the opinion here refers to the context of text being in positive, negative, or neutral light.
 
 In this project we were required to bring out the opinion of sentence for the given aspect term context.
@@ -18,7 +18,7 @@ Column C: aspect term in the sentence
 Column D: aspect term location
 Column E: sentiment label
 
-Strategy Used
+### Strategy Used
 •	Parse the entire dataset file to build a list of records.
 •	Split the sentence using conjunctions (example: and, but, nor etc.) as delimiters to get sub-sentence with aspect term.
 •	For the sub-sentence remove stop words and do POS tagging.
@@ -27,12 +27,12 @@ Strategy Used
 •	Build a bag of words representation for all the records with the 1000 features and the class label.
 •	Do 10-fold cross validation to get 10 sets each with test and training data.
 
-Validation
+### Validation
 We have used 10-fold cross validation for building our classifier model with the below breakup for each iteration.
 Training Data – 90%
 Test Data – 10%
 
-Classification Models Used
+### Classification Models Used
 •	Naïve Bayes
 •	Linear SVM
 •	K-Nearest Neighbor
